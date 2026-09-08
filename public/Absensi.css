@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #d44a2c;
+    --secondary-color: #181C14;
+    --light-color: #ffffff;
+    --dark-color: #1e1e1e;
+    --gray-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    line-height: 1.6;
+}
+
+.back-button {
+    margin-bottom: 15px;
+}
+
+.back-button button {
+    padding: 10px 15px;
+    background-color: #f04e4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button button:hover {
+    background-color: #c03c3c;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h1, h2 {
+    color: var(--light-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.attendance-form, .attendance-history, .schedule-table {
+    background-color: var(--gray-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b33d23;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+tr:nth-child(even) {
+    background-color: #2c2c2c;
+}
+
+.schedule-table th {
+    background-color: var(--primary-color);
+}
+
+.schedule-table td {
+    vertical-align: top;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}

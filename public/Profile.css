@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #e74c3c;
+    --secondary-color: #444444;
+    --light-color: #ffffff;
+    --dark-color: #333333;
+    --gray-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gray-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-link {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: rgba(85, 85, 85, 0.8);
+    border-radius: 3px;
+}
+
+.user-profile {
+    padding: 120px 0 60px;
+    flex: 1;
+}
+
+.profile-card {
+    background: var(--light-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.profile-content {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--light-color);
+    margin-bottom: 20px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-info h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.profile-info span {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.membership-details, .account-settings {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h4 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.membership-features, .settings-options {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-features li, .settings-options li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.membership-features li:last-child, .settings-options li:last-child {
+    border-bottom: none;
+}
+
+.settings-options li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;
+    display: block;
+}
+
+.settings-options li a:hover {
+    color: var(--primary-color);
+}
+
+.membership-features li::before {
+    content: "•";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    color: var(--primary-color);
+    float: left;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+.logout-button {
+    background-color: #d44a2c; /* Warna merah seperti tombol Back */
+    color: #ffffff; /* Warna teks putih */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.logout-button:hover {
+    background-color: #b33d23; /* Warna merah lebih gelap saat hover */
+    transform: scale(1.05); /* Efek zoom kecil saat dihover */
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .membership-cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
