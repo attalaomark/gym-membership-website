@@ -15,6 +15,86 @@ A web-based gym membership management system developed as a group project for th
 - Relational database implementation with MySQL/MariaDB
 - ETL workflows using Pentaho Data Integration (Kettle)
 
+## Application Preview
+
+### Homepage
+
+<p align="center">
+  <img src="assets/screenshots/homepage.png"
+       alt="FitLife Gym Homepage"
+       width="900">
+</p>
+
+The homepage introduces the FitLife Gym platform and provides users with
+access to gym classes, membership options, facilities, and account features.
+
+### Classes
+
+<p align="center">
+  <img src="assets/screenshots/classes.png"
+       alt="FitLife Gym Classes"
+       width="900">
+</p>
+
+Users can explore available fitness classes such as Yoga, HIIT, Pilates,
+and Cardio, including class and instructor information.
+
+### Membership
+
+<p align="center">
+  <img src="assets/screenshots/membership.png"
+       alt="FitLife Gym Membership"
+       width="900">
+</p>
+
+The membership page presents available membership plans and allows users
+to select a plan based on their fitness needs.
+
+### Class Schedule & Booking
+
+<p align="center">
+  <img src="assets/screenshots/class-booking.png"
+       alt="FitLife Gym Class Schedule and Booking"
+       width="900">
+</p>
+
+Users can view the gym's class schedule and book available sessions
+based on the selected class and time.
+
+### Admin Dashboard
+
+<p align="center">
+  <img src="assets/screenshots/admin-dashboard.png"
+       alt="FitLife Gym Admin Dashboard"
+       width="900">
+</p>
+
+The admin dashboard summarizes key operational information including
+total members, new members, active classes, and trainers. Administrators
+can also manage member records directly from the dashboard.
+
+### Booking Management
+
+<p align="center">
+  <img src="assets/screenshots/booking-history.png"
+       alt="FitLife Gym Booking History"
+       width="900">
+</p>
+
+Administrators can monitor class booking records and review the relationship
+between members and their selected classes.
+
+### Revenue Analytics
+
+<p align="center">
+  <img src="assets/screenshots/revenue-analytics.png"
+       alt="FitLife Gym Revenue Analytics"
+       width="900">
+</p>
+
+The administrative dashboard also provides revenue visualization to support
+monitoring of monthly and annual membership income.
+
 ## Tech Stack
 
 - **Backend:** Laravel 11, PHP 8.2+
